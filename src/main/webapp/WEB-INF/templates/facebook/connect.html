@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+	
+<head>
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="../../../resources/css/style.css" th:href="@{/resources/css/style.css}" />
+	<title th:text="#{connect.title.fb}">Title</title>
+</head>
+
+<body>
+	<div class="skin">
+		<div class="content">
+			<div th:include="include :: menu"></div>
+			<div th:include="include :: logo"></div>
+
+			<div class="connect">
+				<h3 th:text="#{connect.h3.fb}">Connect to Social Site</h3>
+				<div>
+					<form action="#" th:action="@{#{${'connect.form.action.fb'}}}" method="POST">
+						<input type="hidden" name="scope" value="publish_stream,offline_access" />
+						<p th:text="#{connect.message.fb}">You haven't created any connections with 
+							Social Media yet. Click the button to create a connection between your account and 
+							your Social Media profile. (You'll be redirected to Twitter where you'll be
+							asked to authorize the connection.)</p>
+						<button type="submit" th:text="#{connect.button.fb}">Connect</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div th:include="include :: footer"></div>
+	</div>	
+</body>
+</html>

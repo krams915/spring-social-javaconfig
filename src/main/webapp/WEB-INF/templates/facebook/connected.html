@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+	
+<head th:fragment="header">
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="../../../resources/css/style.css" th:href="@{/resources/css/style.css}" />
+	<title th:text="#{connected.title.fb}">Title</title>
+</head>
+
+<body>
+	<div class="skin">
+		<div class="content">
+			<div th:include="include :: menu"></div>
+			<div th:include="include :: logo"></div>
+			
+			<div class="connect">
+				<h3 th:text="#{connected.h3.fb}">Success! You have connected to Social Site!</h3>
+				<p>
+					<span th:text="#{app.name}">App Name</span>
+					<span> is connected to your Social Site account.
+					Click the button if you wish to disconnect.</span>
+				</p>
+				
+				<form id="disconnect" action="#" th:action="@{#{${'disconnect.url.fb'}}}" method="post">
+					<button type="submit" th:text="#{disconnect.button.fb}">Disconnect from Social</button>	
+					<input type="hidden" name="_method" value="delete" />
+				</form>
+			</div>
+		</div>
+		<div th:include="include :: footer"></div>	
+	</div>
+</body>
+</html>

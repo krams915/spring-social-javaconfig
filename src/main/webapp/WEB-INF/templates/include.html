@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+	
+<head th:fragment="header">
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="../../resources/css/style.css" th:href="@{/resources/css/style.css}" />
+	<title>Include</title>
+</head>
+
+<body>
+	<div th:fragment="banner">
+		<div class="menu">
+			<ul>
+				<li id="last-menu-item">&nbsp;</li>
+			</ul>
+		</div>
+		<div id="banner">
+			<h1 th:text="#{app.name}">App Name</h1>
+			<h2>Socialize your app</h2>
+			<hr/>
+		</div>
+	</div>
+	
+	<div th:fragment="logo">
+		<div id="logo">
+			<h1 th:text="#{app.name}">App Name</h1>
+			<h2>Socialize your app</h2>
+			<hr/>
+		</div>
+	</div>
+	
+	<div th:fragment="menu">
+		<div class="menu">
+			<ul>
+				<li><a href="#" th:href="@{/fb/profile}">Facebook Profile</a></li>
+				<li><a href="#" th:href="@{/tw/profile}">Twitter Profile</a></li>
+				<li><a href="#" th:href="@{/users}">Manage Users</a></li>
+				<li><a href="#" th:href="@{/fb/post}">Update FB status</a></li>
+				<li><a href="#" th:href="@{/tw/post}">Compose a Tweet</a></li>
+				<li id="last-menu-item"><a href="#" th:href="@{/logout}">Logout</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div th:fragment="disconnect">
+		<form id="disconnect" action="#" th:action="@{#{'disconnect.url.' + ${source}}}" method="post">
+			<button type="submit" th:text="#{'disconnect.button.' + ${source}}">Disconnect from Social</button>	
+			<input type="hidden" name="_method" value="delete" />
+		</form>
+	</div>
+	
+	<div th:fragment="footer">
+		<div class="footer">
+			<hr/>
+			<span>TestApp by </span>
+			<a href="http://krams915.blogspot.com">http://krams915.blogspot.com</a>
+		</div>
+	</div>
+</body>
+</html>

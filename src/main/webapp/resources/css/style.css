@@ -1,0 +1,461 @@
+/**
+ * Color theme from kuler
+ * https://kuler.adobe.com/#themeID/2141151
+ * https://kuler.adobe.com/#themeID/5020
+ */
+
+/**
+ * CSS3 Rounded Corner Generator
+ * http://www.cssportal.com/css3-rounded-corner/
+ */
+
+/**
+ * List style based from CSS Design: Taming Lists
+ * http://www.alistapart.com/articles/taminglists/
+ */
+ 
+/**
+ * Table style based from Top 10 CSS Table Designs
+ * http://coding.smashingmagazine.com/2008/08/13/top-10-css-table-designs/
+ */
+ 
+ /**
+ * Simple Styles for <hr>'s
+ * http://css-tricks.com/examples/hrs/
+ */
+ 
+/**
+ * 12 Professional CSS Buttons
+ * http://graemeboy.com/css-buttons/
+ */
+body {
+	background: #5C832F;
+}
+
+.authname {
+	font-weight: bold;
+	color: red;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
+.skin {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	width: 800px;
+	margin: auto;
+	border-bottom: 0px solid;
+	padding-left: 5px;
+	padding-right: 5px;
+	background: #D8CAA8;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 0px solid gray;
+}
+
+.content {
+	min-height: 600px;
+}
+
+body a:visited, body a:link {
+	color: black;
+	text-decoration: none;
+}
+
+body a:hover {
+	color: red;
+	text-decoration: none;
+}
+
+#banner {
+	margin-top: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#banner h1 {
+	font-size: 5em;
+	padding: 0px;
+	margin: 0px;
+	color: #382513;
+}
+
+#banner h2 {
+	font-size: 1.5em;
+	padding: 0px;
+	margin: 0px;
+	margin-top: -10px;
+	color: #382513;
+}
+
+#logo {
+	font-weight: bold;
+	text-align: right;
+}
+
+#logo h1 {
+	font-size: 2em;
+	padding: 0px;
+	margin: 0px;
+	color: #382513;
+}
+
+#logo h2 {
+	font-size: 1em;
+	padding: 0px;
+	margin: 0px;
+	margin-top: -10px;
+	color: #382513;
+}
+
+.error {
+	color: red;
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px;
+}
+
+.postbox {
+	font-size: 16px;
+	margin: auto;
+	width: 600px;
+	padding: 5px;
+	margin-top: 100px;
+}
+
+.postbox h3 {
+	margin-top: 0px;
+	font-style: italics;
+	margin-bottom: 0px;
+}
+
+.postbox textarea {
+	width: 100%;
+	height: 200px;
+	font-size: 16px;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 5px solid #382513;
+	padding: 5px;
+}
+
+.postbox button {
+	margin-top: 10px;
+	height: 30px;
+	width: 100px;
+	font-size: 16px;
+	float: right;
+	background: #5C832F;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 1px solid gray;
+	cursor: pointer;
+}
+
+.posted {
+	font-size: 16px;
+	margin: auto;
+	width: 600px;
+	padding: 5px;
+	margin-top: 100px;
+}
+
+.posted h3 {
+	margin-top: 0px;
+	font-style: italics;
+	margin-bottom: 0px;
+}
+
+.posted blockquote {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 200px;
+	font-size: 16px;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 5px solid #382513;
+	padding: 5px;
+}
+
+.profile {
+	font-size: 16px;
+	margin: auto;
+	width: 600px;
+	padding: 5px;
+	margin-top: 100px;
+}
+
+.profile img {
+	height: 64px;
+	width: 64px;
+	vertical-align: text-bottom;
+}
+
+.profile span {
+	font-size: 44px;
+	margin-left: 10px;
+}
+
+.profile button {
+	height: 30px;
+	font-size: 16px;
+	float: right;
+	background: #5C832F;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 1px solid gray;
+	cursor: pointer;
+}
+
+.profile h3 {
+	margin-top: 0px;
+	font-style: italics;
+	border-bottom: 5px solid #382513;
+}
+
+.profile .pic {
+	border-bottom: 1px solid #382513;
+	padding-left: 10px;
+}
+
+.connect {
+	font-size: 16px;
+}
+
+.connect button , .connected button{
+	margin-top: 10px;
+	height: 30px;
+	font-size: 16px;
+	float: left;
+	background: #5C832F;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 1px solid gray;
+	cursor: pointer;
+}
+
+.footer {
+	text-align: center;
+	min-height: 50px;
+}
+
+form fieldset {
+	border: 0px solid;
+}
+
+form textarea {
+	display: block;
+}
+
+caption {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.content .status {
+	color: red;
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px;
+}
+
+.welcome {
+	font-size: 16px;
+	padding: 20px;
+}
+
+.login {
+	margin: auto;
+	width: 300px;
+	font-size: 16px;
+	margin-top: 100px;
+}
+
+.signup {
+	margin-top: 20px;
+}
+
+.login legend {
+	text-align: center;
+}
+
+.login form {
+	background: #284907;
+	padding: 5px;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding-top: 0px;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 1px solid gray;
+}
+
+.login p {
+	text-align: center;
+}
+
+.login fieldset {
+	border: 0px solid gray;
+}
+
+.login label {
+	display: block;
+}
+
+.login input {
+	display: block;
+	width: 98%;
+	height: 20px;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.login button {
+	height: 30px;
+	font-size: 16px;
+	float: right;
+	background: #5C832F;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 1px solid gray;
+	cursor: pointer;
+}
+
+.menu {
+	background: #284907;
+	padding: 5px;
+	font-weight: bold;
+	margin-left: -5px;
+	margin-right: -5px;
+	height: 25px;
+	border-radius: 10px 10px 0px 0px; 
+	-moz-border-radius: 10px 10px 0px 0px; 
+	-webkit-border-radius: 10px 10px 0px 0px; 
+	border: 0px solid gray;
+}
+
+.menu a:visited, .menu a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.menu a:hover {
+	color: yellow;
+	text-decoration: none;
+}
+
+.menu ul {
+	margin-left: 0;
+	padding-left: 0;
+	display: inline;
+} 
+
+.menu ul li {
+	margin-left: 0;
+	margin-bottom: 0;
+	padding: 2px 15px 5px;
+	border-right: 1px solid gray;
+	list-style: none;
+	display: inline;
+}
+
+#last-menu-item {
+	border-right: 0px solid #000;
+}
+
+/**
+ * Definition style based from StackOverflow
+ * http://stackoverflow.com/questions/1713048/how-to-style-dt-and-dd-so-they-are-on-the-same-line
+ */
+dl { 
+	width: 400px; 
+}
+
+dt { 
+	float: left; 
+	width: 200px; 
+	font-weight: bold;
+}
+
+dd { 
+	margin-left: 200px; 
+}
+
+.box-table-a caption {
+	text-align: left;	
+	margin-top: 0px;
+	font-style: italics;
+	margin-bottom: 0px;
+	font-size: 18px;
+}
+
+.box-table-a {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+.box-table-a th {
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	background: #382513;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid #fff;
+	color: #ffffff;
+}
+
+.box-table-a td {
+	padding: 8px;
+	background: #e8edff; 
+	border-bottom: 1px solid #fff;
+	color: #669;
+	border-top: 1px solid transparent;
+}
+
+.box-table-a tr:hover td {
+	background: #d0dafd;
+	color: #339;
+}
+
+.add-button, .delete-button, .edit-button {
+	margin-top: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 60px;
+	height: 30px;
+	background: #e8edff;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 1px solid gray;
+	cursor: pointer;
+}
+
+.add-button {
+	padding: 0px;
+	margin: 0px;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 1px solid gray;
+	cursor: pointer;
+}

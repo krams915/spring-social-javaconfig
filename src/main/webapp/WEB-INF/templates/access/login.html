@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+	
+<head th:fragment="header">
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="../../../resources/css/style.css" th:href="@{/resources/css/style.css}" />
+	<title th:text="#{login.title}">Sign in</title>
+</head>
+
+<body>
+	<div class="skin">
+		<div class="content">
+			<div th:include="include :: banner"></div>
+
+			<div class="login">
+				<form action="#" th:action="@{/j_spring_security_check}" method="post" >
+					<fieldset>
+						<label for="j_username" th:text="#{login.username}">Username</label>
+						<input id="j_username" name="j_username" type="text"/>
+						<label for="j_password" th:text="#{login.password}">Password</label>
+						<input id="j_password" name="j_password" type="password"/>
+						<button type="submit" th:text="#{login.button}">Submit</button>
+					</fieldset>
+				</form>
+				<p><a href="#" th:href="@{/signup}" th:text="#{login.noaccount}">No account? Create one now!</a></p>
+			</div>
+			
+			<p class="status" th:if="${not #strings.isEmpty(status)}" th:text="#{'status.' + ${status}}">Status</p>
+		</div>
+		<div th:include="include :: footer"></div>
+	</div>
+</body>
+</html>

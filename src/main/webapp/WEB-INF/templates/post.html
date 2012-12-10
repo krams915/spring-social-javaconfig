@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+	
+<head th:fragment="header">
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="../../resources/css/style.css" th:href="@{/resources/css/style.css}" />
+	<title th:text="#{'post.title.' + ${source}}">Title</title>
+</head>
+
+<body>
+	<div class="skin">
+		<div class="content">
+			<div th:include="include :: menu"></div>
+			<div th:include="include :: logo"></div>
+	
+			<div class="postbox">
+				<h3 th:text="#{${'post.form.legend.' + source}}">Post a message</h3>
+						
+				<form action="#" th:action="@{#{${'post.form.action.' + source}}}" method="post" >
+					<fieldset>
+						<textarea id="message" name="message"></textarea>
+						<button type="submit" th:text="#{${'post.form.submit.' + source}}">Submit</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div th:include="include :: footer"></div>
+	</div>	
+</body>
+</html>

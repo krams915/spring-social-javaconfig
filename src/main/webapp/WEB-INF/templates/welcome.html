@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+	
+<head>
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="../../resources/css/style.css" th:href="@{/resources/css/style.css}" />
+	<title th:text="#{welcome.title}">Title</title>
+</head>
+
+<body>
+	<div class="skin">
+		<div class="content">
+			<div th:include="include :: menu"></div>
+			<div th:include="include :: logo"></div>
+			
+			<div class="welcome">
+				<p>Welcome <span class="authname" th:text="${authname}">user</span> to TestApp! This application will allow you to do the following: </p>
+				<ul>
+					<li>View your Facebook profile</li>
+					<li>View your Twiiter profile</li>
+					<li>Update your Facebook status</li>
+					<li>Tweet a message to Twitter</li>		
+				</ul> 
+				
+				<p>You will need a Facebook or Twitter account to
+				post and access your profile from these social media sites.</p>
+			
+				<p>To know more about this application, please visit the tutorial at
+				<a href="#">Spring Social Tutorial</a>.</p>
+				
+				<p>The GitHub repository is available at
+				<a href="#">spring-social-tutorial</a>.</p>
+			</div>
+		</div>
+		<div th:include="include :: footer"></div>
+	</div>	
+</body>
+</html>

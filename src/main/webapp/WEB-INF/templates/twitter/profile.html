@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+	
+<head th:fragment="header">
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="../../../resources/css/style.css" th:href="@{/resources/css/style.css}" />
+	<title th:text="#{'profile.title.' + ${source}}">Title</title>
+</head>
+
+<body>
+	<div class="skin">
+		<div class="content">
+			<div th:include="include :: menu"></div>
+			<div th:include="include :: logo"></div>
+			
+			<div class="profile">
+				<h3 th:text="#{'profile.h3.' + ${source}}">Your Social Media Profile</h3>
+				<div class="pic">
+					<img src="#" th:src="@{${profileInfo.profileImageUrl}}" alt="profile image"/>
+					<span th:text="${profileInfo.name}">John Smith</span>
+				</div>
+				
+				<div class="detail">
+					<dl>
+						<dt th:text="#{'profile.id.' + ${source}}">Social ID:</dt>
+						<dd th:text="${profileInfo.id}">12345678</dd>
+						<dt th:text="#{'profile.name.' + ${source}}">Social Name:</dt>
+						<dd th:text="${profileInfo.screenName}">johnsmith</dd>
+						<dt th:text="#{'profile.loc.' + ${source}}">Social Area:</dt>
+						<dd th:if="${#strings.isEmpty(profileInfo.location)}" th:text="'no location listed'">location</dd>
+						<dt th:text="#{'profile.url.' + ${source}}">Profile Url:</dt>
+						<dd><a href="#" th:href="@{${profileInfo.profileUrl}}" th:text="${profileInfo.profileUrl}">http://profile-url</a></dd>
+					</dl>
+				</div>
+			
+				<div th:include="include :: disconnect"></div>
+			</div>
+		</div>
+		<div th:include="include :: footer"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+	
+<head th:fragment="header">
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="../../resources/css/style.css" th:href="@{/resources/css/style.css}" />
+	<title th:text="#{'posted.title.' + ${source}}">Title</title>
+</head>
+
+<body>
+	<div class="skin">
+		<div class="content">
+			<div th:include="include :: menu"></div>
+			<div th:include="include :: logo"></div>
+			
+			<div class="posted">
+				<h3 th:text="#{'posted.' + ${status} + '.' + ${source}}">Posting result</h3>
+				
+				<blockquote th:text="${message}">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
+					do eiusmod tempor incididunt ut labore et dolore magna aliqua.</blockquote>
+			</div>
+		</div>
+		<div th:include="include :: footer"></div>
+	</div>	
+</body>
+</html>

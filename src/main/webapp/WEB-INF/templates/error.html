@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+	
+<head th:fragment="header">
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="../../resources/css/style.css" th:href="@{/resources/css/style.css}" />
+	<title>Error</title>
+</head>
+
+<body>
+	<div class="skin">
+		<div class="content">
+			<div th:include="include :: banner"></div>
+			
+			<div>
+				<h3 class="error" th:text="#{'error.' + ${error}}">Error message</h3>
+				<p th:text="${description}">Error description</p>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>

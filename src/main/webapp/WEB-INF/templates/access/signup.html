@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+	
+<head th:fragment="header">
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="../../../resources/css/style.css" th:href="@{/resources/css/style.css}" />
+	<title th:text="#{login.title}">Login</title>
+</head>
+
+<body style="border: 0px solid">
+	<div class="skin">
+		<div class="content">
+			<div th:include="include :: banner"></div>
+
+			<div class="login signup">
+				<form action="#" th:action="@{/signup}" method="post" >
+					<fieldset>
+						<label for="firstName">First Name</label>
+						<input id="firstName" name="firstName" size="47" maxlength="50" type="text"/>
+						<label for="lastName">Last Name</label>
+						<input id="lastName" name="lastName" size="47" maxlength="50" type="text"/>
+						<label for="username">Username</label>
+						<input id="username" name="username" size="47" maxlength="50" type="text"/>
+						<label for="password">Password</label>
+						<input id="password" name="password" size="47" maxlength="50" type="password"/>
+						<label for="repassword">Retype password</label>
+						<input id="repassword" name="repassword" size="47" maxlength="50" type="password"/>
+						<button type="submit" th:text="#{signup.button}">Submit</button>
+					</fieldset>
+				</form>
+				<p><a href="#" th:href="@{/login}" th:text="#{signup.hasaccount}">Already have an account? Sign in!</a></p>
+			</div>
+			
+			<p class="status" th:if="${not #strings.isEmpty(status)}" th:text="#{'status.' + ${status}}">Status</p>
+		</div>	
+		<div th:include="include :: footer"></div>
+	</div>
+</body>
+</html>
